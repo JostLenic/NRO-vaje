@@ -1,8 +1,7 @@
-function pribljizek = mcc_pi(st_tock)
+function cel_koord = mcc_pi(st_tock)
     x = 2*rand(st_tock, 1) - 1;
     y = 2*rand(st_tock, 1) - 1;
     koorn = zeros(st_tock, 2);
-    koorz = zeros(st_tock, 2);
     seznam_r = zeros(st_tock, 1);
     st_not_tock = 0;
 
@@ -13,13 +12,12 @@ function pribljizek = mcc_pi(st_tock)
         if seznam_r(i) <= 1
             koorn(i, :) = koor(i, :);
             st_not_tock = st_not_tock + 1;
-        else
-            koorz(i, :) = koor(i, :);
         end    
     end    
     %koordinate_tock_znotraj_kroga = koorn;
-    %koordinate_tock_znotraj_kvadrata = koorz;
+    %koordinate_tock_znotraj_kvadrata = koor;
+    cel_koord = [koorn, koor];
     %seznam_r;
     %st_not_tock;
-    pribljizek = 4*st_not_tock/st_tock;
+    %pribljizek = 4*st_not_tock/st_tock;
 end
