@@ -16,8 +16,7 @@ function cel_koord = mcc_pi(st_tock)
     end    
     %koordinate_tock_znotraj_kroga = koorn;
     %koordinate_tock_znotraj_kvadrata = koor;
-    cel_koord = [koorn, koor];
-    %seznam_r;
     %st_not_tock;
     %pribljizek = 4*st_not_tock/st_tock;
+    cel_koord = [koorn, koor];
 end
