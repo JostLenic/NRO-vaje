@@ -16,8 +16,8 @@ y = mvt(:, 2);
 oddaljenost = sqrt(x.^2 + y.^2);
 Notri = oddaljenost <= R;
 Zunaj = oddaljenost > R;
-scatter(x(Notri), y(Notri), 50, 'green', 'filled');
-scatter(x(Zunaj), y(Zunaj), 50, 'r', 'x');
+scatter(x(Notri), y(Notri), 50, 'green', '.');
+scatter(x(Zunaj), y(Zunaj), 50, 'red', 'x');
 
 %plot(linspace(1, a, a), vec_aproksim)
 
