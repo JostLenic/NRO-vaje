@@ -19,6 +19,10 @@ Notri = oddaljenost <= R;
 Zunaj = oddaljenost > R;
 scatter(x(Notri), y(Notri), 50, 'green', '.');
 scatter(x(Zunaj), y(Zunaj), 50, 'red', 'x');
+title('Grafični prikaz točk in križnice');
+xlabel('X-os');
+ylabel('Y-os');
+legend('Krožnica', 'Točke znotraj', 'Točke zunaj');
 
 %plot(linspace(1, a, a), vec_aproksim)
 
